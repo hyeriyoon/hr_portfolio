@@ -1,0 +1,63 @@
+/********** Global **********/
+:root{
+    /* App colours */
+    --color-primary: 
+    --color-primary-variant: 
+    --color-accent: 
+    --color-accent-variant:
+    --color-text:
+
+    /* Colours */
+    --color-
+    --color-
+    --color-
+    --color-
+
+    /* sizes */
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    margin: 0
+}
+
+h1, h2, h3, h4, ul, p{
+    margin: 0
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+
+/********** Header **********/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2.5rem;
+}
+/********** Home **********/
+/********** About **********/
+.skill{
+    display: inline-block;
+}
+.skill_img{
+    width: 7rem;
+    height: 7rem;
+}
+.skill_name{
+    font-size: 1.5rem;
+    text-align: center;
+}
+/********** Works **********/
+
+/********** Footer **********/
