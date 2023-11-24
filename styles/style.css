@@ -1,20 +1,22 @@
 /********** Global **********/
 :root{
     /* App colours */
-    --color-primary: 
-    --color-primary-variant: 
-    --color-accent: 
-    --color-accent-variant:
-    --color-text:
+    --color-primary: ;
+    --color-primary-variant: ;
+    --color-accent: ;
+    --color-accent-variant: ;
+    --color-text: ;
+    --color-bgd: var(--color-white);
 
     /* Colours */
-    --color-
-    --color-
-    --color-
-    --color-
+    --color-white: #F2F2F2;
+    --color-lavendar: #AD9DCC;
+    --color-black: #413B4D;    
 
     /* sizes */
-
+    --size-max-width: 1000px;
+    --size-tablet-width: 767px;
+    --size-mobile-width: 480px;
 }
 *{
     box-sizing: border-box;
@@ -22,7 +24,8 @@
 body{
     /* font-family: 'Nunito', sans-serif; */
     font-family: 'Poppins', sans-serif;
-    margin: 0
+    margin: 0;
+    background-color: var(--color-bgd);
 }
 
 h1, h2, h3, h4, ul, p{
@@ -34,18 +37,66 @@ ul{
 }
 a{
     text-decoration: none;
-    color:black
+    color: var(--color-black);
+}
+main{
+    padding: 0 3rem;
+    width: 100%;
+
 }
 
 /********** Header **********/
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 2rem;
 }
 .logo{
     font-size: 2.5rem;
+    width: 15%;
+}
+.navigation{
+    width: 85%;
+}
+.nav_ul{
+    display: flex;
+    justify-content:space-between;
+}
+.nav_li{
+    font-size: 1.5rem;
+    width: 25%;
+    text-align: center;
+}
+.nav_li:hover{
+    border: solid 2px white;
 }
 /********** Home **********/
+#home{
+    height: 100vh;
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: space-between;
+
+}
+.home_des{
+    width: 50%;
+    /* transform: translateY(50%); */
+}
+.home_des_h1{
+
+}
+.home_des_des{
+
+}
+.home_img{
+    max-width: 30rem;
+
+}
+.home_img_img{
+    width: 100%;
+}
 /********** About **********/
 .skill{
     display: inline-block;

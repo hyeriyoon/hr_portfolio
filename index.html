@@ -38,20 +38,23 @@
     <header>
         <a class="logo" href="#">Hyeri</a>
         <nav class="navigation">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Works</li>
-                <li>Contact</li>
+            <ul class="nav_ul">
+                <li><a class="nav_li" href="#">Home</a></li>
+                <li><a class="nav_li" href="#about">About</a></li>
+                <li><a class="nav_li" href="#works">Works</a></li>
+                <li><a class="nav_li" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <div>
-                <p>Hello, I'm Hyeri</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit maiores neque reiciendis in harum corrupti obcaecati consequatur aut.</p>
+            <div class="home_des">
+                <h1 class="home_des_h1">Hello, I'm Hyeri</h1>
+                <p class="home_des_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugit maiores neque reiciendis in harum corrupti obcaecati consequatur aut.</p>
+            </div>
+            <div class="home_img">
+                <img class="home_img_img" src="./images/office.png" alt="">
             </div>
         </section>
         <section id="about">
@@ -95,6 +98,7 @@
             </div>
         </section>
         <section id="works">
+            <h2>Works</h2>
             <article class="work">
                 <img class="work_img" src="./images/flower-2336287_1920.jpg" alt="">
                 <div class="work_des">
@@ -144,6 +148,9 @@
                 </div>
             </article>
         </section>
+        <aside>
+            <a href="#"><svg class="backtotop" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"/></svg></a>
+        </aside>
     </main>
 
     <footer>
