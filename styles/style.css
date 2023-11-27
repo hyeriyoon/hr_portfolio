@@ -6,13 +6,16 @@
     --color-accent: var(--color-lavendar);
     --color-accent-variant: var(--color-lavendar-variant);
     --color-text: var(--color-black);
+    --color-text-variant: var(--color-grey);
     --color-bgd: var(--color-white);
 
     /* Colours */
     --color-white: #F2F2F2;
     --color-lavendar: #AD9DCC;
     --color-lavendar-variant: #d3c3f2;
-    --color-black: #413B4D;    
+    --color-black: #413B4D;  
+    --color-grey: rgb(154, 154, 154);  
+
 
     /* sizes */
     --size-max-width: 1000px;
@@ -44,11 +47,21 @@ a, button{
     cursor: pointer;
 }
 main{
-    padding: 0 15rem;
+    margin: 0 auto;
+    max-width: 1200px;
     width: 100%;
 }
 section{
     margin: 5rem auto;
+    width: 100%;
+
+}
+p{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.reverse{
+    flex-direction: row-reverse;
 }
 
 /********** Header **********/
@@ -90,7 +103,6 @@ header{
 #home{
     height: 100vh;
     display: flex;
-    /* width: 100%; */
     align-items: center;
     justify-content: space-around;
 
@@ -116,31 +128,85 @@ header{
 .about{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .about_des{
     width: 50%;
 }
 .about_des p{
-    font-size: 1.3rem;
-    padding: .7rem 1rem .7rem 0;
+    /* font-size: 1.3rem; */
+    padding: .7rem 1.5rem .7rem 0;
 }
 .about_skills{
     width: 50%;
-    padding: .7rem 0 .7rem 1rem;
+    padding: .7rem 0 .7rem 1.5rem;
 }
-
 .skill{
     display: inline-block;
     text-align: center;
+    margin: 0 1rem;
 }
 .skill_img{
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
 }
 .skill_name{
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: center;
 }
 /********** Works **********/
+.work{
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1.3rem auto;
+}
+.work_img{
+    width: 50%;
+}
+.work_des{
+    width: 40%;
+    margin: 0 auto;
+}
+.work_des_title{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.work_des_des{
+
+}
+.work_tools{
+    margin-top: 1rem;
+}
+.work_tool{
+    padding: .3rem;
+    border: solid white 1px;
+    border-radius: .3rem;
+    background-color: white;
+    color: var(--color-text-variant);
+    margin-right: .3rem;
+}
+.work_link{
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.work_link_a{
+    border: solid 3px white;
+    border-radius: .3rem;
+    padding: .5rem 4.5rem;
+    margin-top: 1rem;
+    display: inline-block;  
+}
+.work_link_a a{
+    color: var(--color-text-variant);  
+}
+.work_link_a:hover{
+    background-color: white;
+    cursor: pointer;
+    color: transparent;
+}
 
 /********** Footer **********/
