@@ -30,12 +30,13 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: var(--color-bgd);
+    color: var(--color-text);
 }
-
 h1, h2, h3, h4, ul, p{
     margin: 0;
-    font-weight: 700;
-
+}
+h2{
+    color: var(--color-accent);
 }
 ul{
     list-style: none;
@@ -54,7 +55,7 @@ main{
     width: 100%;
     position: relative;
 }
-section:not(:first-child){
+section:not(:first-child):not(:nth-child(2)){
     margin: 5rem auto;
     width: 100%;
 }
@@ -66,6 +67,9 @@ p{
 }
 .highlighted{
     color: var(--color-text-variant)
+}
+.bold{
+    font-weight: 700;
 }
 @media screen and (max-width: 1150px){
     main{
@@ -98,7 +102,7 @@ header{
 }
 .nav_ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     height: 2.5rem;
 }
@@ -138,7 +142,8 @@ header{
     /* transform: translateY(50%); */
 }
 .home_des_h1{
-    font-size: 4.5rem;    
+    font-size: 4.5rem;
+    color: var(--color-accent);
 }
 .home_des_des{
 
@@ -195,6 +200,9 @@ header{
     padding: .7rem 0 .7rem 1.5rem;
     margin-top: 1.5rem;
 }
+.about_skills_skill{
+    margin-top: 1rem;
+}
 .about_des h3,
 .about_skills h3{
     margin-bottom: .75rem;
@@ -249,7 +257,7 @@ header{
     width: 100%;
     display: flex;    
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     margin: 1.3rem auto;
 }
@@ -290,7 +298,7 @@ header{
     padding: .5rem 0;
     text-align: center;
     /* padding: .5rem 3.5rem; */
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: inline-block;  
     flex-wrap: wrap;
 }
@@ -389,6 +397,28 @@ header{
 /********** Footer **********/
 .footer{
     display: none;
+    background-color: var(--color-accent);
+    text-align: center;
+    padding: 1rem 0;
+    /* position: relative; */
+}
+.footer:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 20px solid var(--color-white);
+    /* position: absolute;
+    bottom: 8rem;
+    right: 17.5rem; */
+}
+.footer-h2{
+    color: var(--color-white);
+}
+.footer-social-media svg{
+    fill: var(--color-white);
+    margin: 1rem .5rem 0;
 }
 @media screen and (max-width: 767px){
     .footer{
